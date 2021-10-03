@@ -1,3 +1,11 @@
+body {
+    font-family: sans-serif;
+    background-image: url('https://theaterkapelletje.nl/wp-content/uploads/2018/08/rc-05-1024x16.jpg');
+    background-size: 100% auto;
+    margin: auto;
+    box-shadow: inset 0 0 480px #000000;
+}
+
 header {
     padding-top:35px;
     padding-bottom:40px;
@@ -17,99 +25,58 @@ nav{
     align-items: center;
 }
 
-#navi {
-    background-color: black;
+.navi {
+    background-color: #222222;
     margin-top: 25px;
     width: 80vw;
     padding: 20px 0 20px 0;
     text-align: center;
     color: white;
     font-size: 15px;
-    text-transform: capitalize;
-    cursor:pointer;
 }
 
-#navi:hover {
+.navi:hover {
     background-color:darkgrey;
 }
 
-#navi a, #navi a:visited {
+.navi a, .navi a:visited {
     color:white;
     text-decoration:none;
 }
 
-body {
-    font-family: sans-serif;
-    margin: auto;
-    background-color: #954742;
-}
-
-.midden {
+.center {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
-.center {
+.info {
+    width: 66vw;
     text-align: center;
     border: 2px solid black;
     border-radius: 5px;
-    width: 66vw;
     padding-bottom: 20px;
     margin-top: 20px;
     background-color: #D5D5D5;
 }
 
-.extra {
-    min-width: 66vw;
+.register {
+    width: 66vw;
     text-align: center;
     border: 2px solid black;
     border-radius: 5px;
     padding-bottom: 15px;
     margin-top: 30px;
-    background-color: black;
+    background-color: #222222;
 }
 
-h2 {
-    color: white;
-    background-color: black;
-    padding-bottom: 15px;
-    padding-top: 15px;
-    font-family: 'Times New Roman', serif;
-}
-
-h3 {
-    color: black;
-    padding-bottom: 15px;
-    padding-top: 15px;
-    background-color: #EEBD40;
-    font-family: 'Times New Roman', serif;
-    font-weight: bold;
-}
-
-#username {
+#username , #age {
     text-align: center;
     color: grey;
     border: 3px solid #EEBD40;
     border-radius: 4px;
     margin-bottom: 5px;
-}
-
-#username input {
-    border: 3px solid #EEBD40;
-    border-radius: 4px;
-}
-#age {
-    text-align: center;
-    color: grey;
-    border: 3px solid #EEBD40;
-    border-radius: 4px;
-}
-#age input {
-    border: none;
-    outline: none;
 }
 
 .btn{
@@ -123,32 +90,78 @@ h3 {
     margin: 15px 0;
 }
 
-footer {
-    background-color: black;
+.kapelletje {
+    width: 66vw;
+    height: 17vw;
     text-align: center;
-    margin-top: 40px;
-    position: relative;
-    box-sizing: border-box;
-    vertical-align: top;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-image: url("https://theaterkapelletje.nl/wp-content/uploads/2018/08/bannerP1000211_1280x310.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 300px #929164;
+    margin: 30px 0 20px 0;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.extraNav {
+    background-color: #f7bc33;
+    font-size: 16px;
+    letter-spacing: 0.6px;
+    font-family: "Roboto", Sans-serif;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+.extraNav a, .extraNav:visited {
+    text-decoration:none;
+    color: black;
+}
+
+.extraNav:hover {
+    background-color: #D5D5D5;
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #222222;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+}
+
+h2 {
+    color: white;
+    background-color: #222222;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-family: 'Times New Roman', serif;
+}
+
+h3 {
+    color: black;
+    background-color: #EEBD40;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-family: 'Times New Roman', serif;
+    font-weight: bold;
 }
 
 .p2 {
     color: white;
-    padding-bottom: 15px;
-    background-color: black;
-    padding-top: 15px;
-    padding-left: 5px;
-    padding-right: 5px;
-    font-size: 12px;
+    font-size: 15px;
 
 }
 
 .p1 {
     color: black;
-    padding-bottom: 15px;
-    padding-top: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 15px 5px 15px 5px;
 }
 
 
@@ -160,16 +173,23 @@ footer {
     }
 
     header {
-        padding-top:35px;
-        padding-bottom:5px;
+        padding-top: 35px;
+        padding-bottom: 5px;
     }
 
-    .center {
+    .kapelletje {
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+        height: 50vw;
+    }
+
+    .info {
         width: 80vw;
 
     }
 
-    .extra {
+    .register {
         width: 80vw;
     }
 }
